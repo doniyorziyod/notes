@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "uz.ictschool.notes"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "uz.ictschool.notes"
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -44,4 +47,31 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    val nav_version = "2.7.2"
+
+    // Java language implementation
+    implementation("androidx.navigation:navigation-fragment:$nav_version")
+    implementation("androidx.navigation:navigation-ui:$nav_version")
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Calendar
+    implementation("com.applandeo:material-calendar-view:1.7.0")
+    implementation("com.guolindev.permissionx:permissionx:1.7.1")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // TimePicker
+    implementation("com.ycuwq.widgets:datepicker:1.3.1")
+
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+    // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+
+    // Jetpack Compose Integration
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
