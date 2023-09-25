@@ -14,8 +14,8 @@ class Task(
     val type: Types,
     val date:String,
     val time:String,
-    var isCompleted:Boolean = false,
-    var imgPath:String
+    var isCompleted:Boolean = false
+//    var imgPath:String
 ){
     @PrimaryKey(autoGenerate = true)
     var taskId:Int = 0

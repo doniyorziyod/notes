@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import uz.ictschool.notes.database.dao.TaskDao
 import uz.ictschool.notes.database.entity.Task
 
-@Database(entities = [Task::class], version = 1)
+@Database(entities = [Task::class], version = 2)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun taskDao(): TaskDao

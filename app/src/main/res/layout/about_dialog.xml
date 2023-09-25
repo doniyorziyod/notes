@@ -29,7 +29,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:autoLink="all"
-        android:text="This application was created by Husanboy Azamov, a student of the GITA Academy of Programmers"
+        android:text="This application was created by Ziyodov Doniyor"
         android:maxLines="5"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -38,10 +38,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/close"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/closeAboutDialog"
         android:layout_marginBottom="20dp"
         app:backgroundTint="@color/defaultColor"
         android:text="close"
